@@ -61,7 +61,16 @@ In the data above, you can observe that 59% of women who took triUmpsal resulted
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The P value for the Fisher test is very small, there is a difference between the Chi-square number, which was 15, vs the df number which was 1. Therefore we reject the null hypothesis. The fisher tests show that if you take the preventative drug you are 1.5x more likely to get aids vs if you were to take the placebo. The data shows the drug is ineffective. 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+In this set of data we took the number of females who tried triUmpsal to help prevent aids. Some women were given the drug while other women were given a placebo. 11,768 women were analyzed in this study and in conclusion we found out a few things. For one, the drug did not seem to work for the female population. Secondly, we saw that 210 women who were given the drug wound up getting aids versus the 147 women who were given the placebo and got aids. We can notate that more people who received the drug also got aids. Our P value for the fisher test was very small at 0.0001, which led us to reject the nul hypothesis. 
